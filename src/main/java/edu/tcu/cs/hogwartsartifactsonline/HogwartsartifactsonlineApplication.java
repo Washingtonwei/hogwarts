@@ -17,5 +17,9 @@ public class HogwartsartifactsonlineApplication {
     public IdWorker idWorker(){
         return new IdWorker(1, 1);
     }
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder(){
+        return new BCryptPasswordEncoder();
+    }
 
 }
